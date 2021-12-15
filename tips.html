@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tips & tricks</title>
+</head>
+<body>
+ <h1>Tips & tricks</h1> 
+ <p>from @new_javascript on Instagram</p>  
+
+ <h2>Convert String to an Array</h2>
+ <p>check the script</p>
+ <script>
+     let string = 'travel'
+     
+     //option 1
+     console.log( string.split(''))
+     
+     // opcion 2
+     console.log([...string])
+     
+     //opcion 3 
+     console.log(Array.from(string))
+     
+     // opcion 4
+     console.log(Object.assign([],string))
+</script>
+
+
+
+<h2>Convert Object to an Array</h2>
+<p>check the script</p>
+<script>
+    const categories = {
+        web : 'Javascript',
+        app: 'Android'
+    }
+    
+    console.info(Object.keys(categories))
+    console.info(Object.values(categories))
+    console.info(Object.entries(categories))
+</script>
+
+
+
+
+
+<h2>Copy or clon an Array</h2>
+<p>check the script</p>
+<script>
+    const alpha =['A','B','C']
+    
+    //old way
+    const cloneAlpha = alpha.slice()
+    console.info(cloneAlpha)
+    
+    // ES6 way
+    const cloneAlphaES6 = [...alpha]
+    console.info(cloneAlphaES6)
+</script>
+
+
+
+
+
+
+<h2>Copy or clon an Object</h2>
+<p>check the script</p>
+<script>
+    const travel = {
+        country : 'Perú',
+        city : 'Lima'
+    }
+    
+    // Spread
+    const clone1 = {...travel}
+    console.info(clone1)
+    
+    //Object.assign
+    const clone2 = Object.assign({},travel)
+    console.info(clone2)
+    
+    //JSON
+    const clone3 = JSON.parse(JSON.stringify(travel))
+    console.info(clone3)
+</script>
+
+
+
+<h2>Arrow function Cheatsheet</h2>
+<p>check the script</p>
+<script>
+    // Explicit Return , Multi-Line
+    
+    val => {
+        return val
+    }
+    
+    // Explicit Return, Single-Line
+    val => { return val}
+    
+    
+    // Implicit Return, Multi-Line
+    val => {
+        val
+    }
+    
+    //Implicit Return, Single-Line
+    val => val
+    
+</script>
+
+
+
+<h2>Arrow function Cheatsheet</h2>
+<p>check the script</p>
+<script>
+    
+</script>
+</body>
+</html>
